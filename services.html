@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sakthi digitech</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+	<style></style>
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			/* background: #036ced; */
+			color: #EEEEEE;
+			text-align: center;
+			font-family: "Lato", sans-serif;
+		}
+
+		#video-background {
+			/*  making the video fullscreen  */
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
+			width: 100%;
+			height: auto;
+			z-index: -100;
+			object-fit: cover;
+		}
+
+		/* @media screen and (max-width: 700px) {
+		   body {
+			  padding: 170px 0 0 0;
+			  width: 100%
+		   }
+		} */
+
+		a {
+			color: inherit;
+		}
+
+		.menu-item,
+		.menu-open-button {
+
+			background: #EEEEEE;
+			border-radius: 100%;
+			width: 80px;
+			height: 80px;
+			margin-left: -40px;
+			position: absolute;
+			color: #FFFFFF;
+			text-align: center;
+			line-height: 80px;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			-webkit-transition: -webkit-transform ease-out 200ms;
+			transition: -webkit-transform ease-out 200ms;
+			transition: transform ease-out 200ms;
+			transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+		}
+
+		.menu-open {
+			display: none;
+		}
+
+		.lines {
+			width: 25px;
+			height: 3px;
+			background: #596778;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -12.5px;
+			margin-top: -1.5px;
+			-webkit-transition: -webkit-transform 200ms;
+			transition: -webkit-transform 200ms;
+			transition: transform 200ms;
+			transition: transform 200ms, -webkit-transform 200ms;
+		}
+
+		.line-1 {
+			-webkit-transform: translate3d(0, -8px, 0);
+			transform: translate3d(0, -8px, 0);
+		}
+
+		.line-2 {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+
+		.line-3 {
+			-webkit-transform: translate3d(0, 8px, 0);
+			transform: translate3d(0, 8px, 0);
+		}
+
+		.menu-open:checked+.menu-open-button .line-1 {
+			-webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+			transform: translate3d(0, 0, 0) rotate(45deg);
+		}
+
+		.menu-open:checked+.menu-open-button .line-2 {
+			-webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+			transform: translate3d(0, 0, 0) scale(0.1, 1);
+		}
+
+		.menu-open:checked+.menu-open-button .line-3 {
+			-webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+			transform: translate3d(0, 0, 0) rotate(-45deg);
+		}
+
+		.menu {
+			/* padding-bottom: 2cm; */
+			/* margin-top: -5cm; */
+			margin: auto;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 80px;
+			height: 80px;
+			text-align: center;
+			box-sizing: border-box;
+			font-size: 26px;
+		}
+
+
+		/* .menu-item {
+		  transition: all 0.1s ease 0s;
+	   } */
+
+		.menu-item:hover {
+			background: #EEEEEE;
+			color: #3290B1;
+		}
+
+		.menu-item:nth-child(3) {
+			-webkit-transition-duration: 180ms;
+			transition-duration: 180ms;
+		}
+
+		.menu-item:nth-child(4) {
+			-webkit-transition-duration: 180ms;
+			transition-duration: 180ms;
+		}
+
+		.menu-item:nth-child(5) {
+			-webkit-transition-duration: 180ms;
+			transition-duration: 180ms;
+		}
+
+		.menu-item:nth-child(6) {
+			-webkit-transition-duration: 180ms;
+			transition-duration: 180ms;
+		}
+
+		.menu-item:nth-child(7) {
+			-webkit-transition-duration: 180ms;
+			transition-duration: 180ms;
+		}
+
+		.menu-item:nth-child(8) {
+			-webkit-transition-duration: 180ms;
+			transition-duration: 180ms;
+		}
+
+		.menu-item:nth-child(9) {
+			-webkit-transition-duration: 180ms;
+			transition-duration: 180ms;
+		}
+
+		.menu-open-button {
+			z-index: 2;
+			-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			-webkit-transition-duration: 400ms;
+			transition-duration: 400ms;
+			-webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+			transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+			cursor: pointer;
+			box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+
+		}
+
+		.menu-open-button:hover {
+			-webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+			transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+		}
+
+		.menu-open:checked+.menu-open-button {
+			-webkit-transition-timing-function: linear;
+			transition-timing-function: linear;
+			-webkit-transition-duration: 200ms;
+			transition-duration: 200ms;
+			-webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+			transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+		}
+
+		.menu-open:checked~.menu-item {
+			-webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+			transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+		}
+
+		.menu-open:checked~.menu-item:nth-child(3) {
+			transition-duration: 180ms;
+			-webkit-transition-duration: 180ms;
+			-webkit-transform: translate3d(0.08361px, -104.99997px, 0);
+			transform: translate3d(0.08361px, -104.99997px, 0);
+		}
+
+		.menu-open:checked~.menu-item:nth-child(4) {
+			transition-duration: 280ms;
+			-webkit-transition-duration: 280ms;
+			-webkit-transform: translate3d(90.9466px, -52.47586px, 0);
+			transform: translate3d(90.9466px, -52.47586px, 0);
+		}
+
+		.menu-open:checked~.menu-item:nth-child(5) {
+			transition-duration: 380ms;
+			-webkit-transition-duration: 380ms;
+			-webkit-transform: translate3d(90.9466px, 52.47586px, 0);
+			transform: translate3d(90.9466px, 52.47586px, 0);
+		}
+
+		.menu-open:checked~.menu-item:nth-child(6) {
+			transition-duration: 480ms;
+			-webkit-transition-duration: 480ms;
+			-webkit-transform: translate3d(0.08361px, 104.99997px, 0);
+			transform: translate3d(0.08361px, 104.99997px, 0);
+		}
+
+		.menu-open:checked~.menu-item:nth-child(7) {
+			transition-duration: 580ms;
+			-webkit-transition-duration: 580ms;
+			-webkit-transform: translate3d(-90.86291px, 52.62064px, 0);
+			transform: translate3d(-90.86291px, 52.62064px, 0);
+		}
+
+		.menu-open:checked~.menu-item:nth-child(8) {
+			transition-duration: 680ms;
+			-webkit-transition-duration: 680ms;
+			-webkit-transform: translate3d(-91.03006px, -52.33095px, 0);
+			transform: translate3d(-91.03006px, -52.33095px, 0);
+		}
+
+		.menu-open:checked~.menu-item:nth-child(9) {
+			transition-duration: 780ms;
+			-webkit-transition-duration: 780ms;
+			-webkit-transform: translate3d(-0.25084px, -104.9997px, 0);
+			transform: translate3d(-0.25084px, -104.9997px, 0);
+		}
+
+		.blue {
+			background-color: #669AE1;
+			box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+		}
+
+		.blue:hover {
+			color: #669AE1;
+			text-shadow: none;
+		}
+
+		.green {
+			background-color: #70CC72;
+			box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+		}
+
+		.green:hover {
+			color: #70CC72;
+			text-shadow: none;
+		}
+
+		.red {
+			background-color: #FE4365;
+			box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+		}
+
+		.red:hover {
+			color: #FE4365;
+			text-shadow: none;
+		}
+
+		.purple {
+			background-color: #C49CDE;
+			box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+		}
+
+		.purple:hover {
+			color: #C49CDE;
+			text-shadow: none;
+		}
+
+		.orange {
+			background-color: #FC913A;
+			box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+		}
+
+		.orange:hover {
+			color: #FC913A;
+			text-shadow: none;
+		}
+
+		.lightblue {
+			background-color: #62C2E4;
+			box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+		}
+
+		.lightblue:hover {
+			color: #62C2E4;
+			text-shadow: none;
+		}
+
+		.credit {
+			margin: 24px 20px 120px 0;
+			text-align: right;
+			color: #EEEEEE;
+		}
+
+		.credit a {
+			padding: 8px 0;
+			color: #C49CDE;
+			text-decoration: none;
+			transition: all 0.3s ease 0s;
+		}
+
+		.credit a:hover {
+			text-decoration: underline;
+		}
+	</style>
+	<style>
+		* {
+			font-family: 'montserrat';
+		}
+	</style>
+
+</head>
+
+<body>
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-body ftco-navbar-light" id="ftco-navbar">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img src="./images/SAKTHI DIGITECH LOGO-01.png" class="img-fluid"
+					alt="" style=" width:260px ;"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+					<li class="nav-item active"><a href="services.html" class="nav-link">Services</a></li>
+					<li class="nav-item dropdown">
+						<!-- <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown04" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Portfolio</a> -->
+						<!-- <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+              <a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Case Studies</a></li> -->
+					<li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+					<!-- <li class="nav-item cta"><a href="contact.php" class="nav-link">Get in touch</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<div class="hero-wrap js-fullheight">
+		<div class="overlay"></div>
+		<div id="particles-js"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-center justify-content-center"
+				data-scrollax-parent="true">
+				<div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+					<p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span
+							class="mr-2"><a href="index.html">Home</a></span> <span>Services</span></p>
+					<h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Services</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<section class="ftco-section ">
+		<div class="container p-5">
+			<div class="row ">
+
+				<div class="col-lg-6 col-sm-12 ">
+
+
+
+
+					<div data-aos="fade-up-right"> <span class="subheading" style="color: rgb(53, 52, 52);">Our
+							Services</span>
+						<h2 class="mb-4" style="color: black;">Digital Marketing, <br> Bring your ideas to life</h2>
+						<P style="font-size: 28px; color: black; font-family: 'montserrat';">Success with digital
+							marketing is the result of sound strategy, not perfectly executed tactics</P>
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-sm-12 mt-5 ">
+
+					<nav class="menu ">
+						<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+						<label class="menu-open-button" for="menu-open">
+							<span class="lines line-1"></span>
+							<span class="lines line-2"></span>
+							<span class="lines line-3"></span>
+						</label>
+
+
+						<a href="DIGITAL MARKETING.html" target="_blank" class="menu-item blue"> <i
+								class="fa fa-object-group" style="align-self: center; font-size: 40px;"
+								aria-hidden="true"></i></a>
+						<a href="CAREER.html" target="_blank" class="menu-item green"> <i class="fa fa-child" al
+								style="color:#483d43; align-self: center; font-size: 40px;" aria-hidden="true"></i> </a>
+						<a href="WEB.html" target="_blank" class="menu-item red "> <i class="fa fa-code"
+								style="color:#3a362e; align-self: center; font-size: 40px;" aria-hidden="true"></i> </a>
+						<a href="COLLEGE PROJECTS.html" target="_blank" class="menu-item purple"> <i
+								class="fa fa-graduation-cap" style="color:#19252b; align-self: center; font-size: 40px;"
+								aria-hidden="true"></i> </a>
+						<a href="GRAPHIC DESIGN.html" target="_blank" class="menu-item orange"> <i
+								class="fa-duotone fa-laptop"
+								style="color:rgb(1, 11, 1); align-self: center; font-size: 40px;"
+								aria-hidden="true"></i> </a>
+						<a href="STUDY ABROAD.html" target="_blank" class="menu-item lightblue"> <i
+								class="fa fa-fighter-jet" style="color:black; align-self: center; font-size: 40px;"
+								aria-hidden="true"></i> </a>
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	-->
+
+
+
+
+	<!-- side toggle -->
+
+	<section>
+		<div id="floating-menu">
+			<div id="floating-icon" style="padding: 10px;">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div id="floating-ligar" style="display: block;">
+				<a href="tel: 011">
+					<svg class="svg-inline--fa fa-phone fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="phone"
+						role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+						<path fill="currentColor"
+							d="M493.397 24.615l-104-23.997c-11.314-2.611-22.879 3.252-27.456 13.931l-48 111.997a24 24 0 0 0 6.862 28.029l60.617 49.596c-35.973 76.675-98.938 140.508-177.249 177.248l-49.596-60.616a24 24 0 0 0-28.029-6.862l-111.997 48C3.873 366.516-1.994 378.08.618 389.397l23.997 104C27.109 504.204 36.748 512 48 512c256.087 0 464-207.532 464-464 0-11.176-7.714-20.873-18.603-23.385z">
+						</path>
+					</svg><!-- <i class="fas fa-phone"></i> -->
+				</a>
+			</div>
+			<div id="floating-whatsapp" style="display: block;">
+				<a href="https://api.whatsapp.com/send?phone=55011_________">
+					<svg class="svg-inline--fa fa-whatsapp fa-w-14" aria-hidden="true" data-prefix="fab"
+						data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+						data-fa-i2svg="">
+						<path fill="currentColor"
+							d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+						</path>
+					</svg><!-- <i class="fab fa-whatsapp"></i> -->
+				</a>
+			</div>
+			<!-- <div id="floating-emergencia" data-toggle="modal" data-target="#modalUrgencia" style="display: block;">
+      <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path></svg><!-- <i class="fas fa-plus"></i> -->
+			<!-- </div> -->
+		</div>
+
+		<div id="floating-ligar" style="display: none;">
+			<a href="tel:+919597414197">
+				<svg class="svg-inline--fa fa-phone fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="phone"
+					role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+					<path fill="currentColor"
+						d="M493.397 24.615l-104-23.997c-11.314-2.611-22.879 3.252-27.456 13.931l-48 111.997a24 24 0 0 0 6.862 28.029l60.617 49.596c-35.973 76.675-98.938 140.508-177.249 177.248l-49.596-60.616a24 24 0 0 0-28.029-6.862l-111.997 48C3.873 366.516-1.994 378.08.618 389.397l23.997 104C27.109 504.204 36.748 512 48 512c256.087 0 464-207.532 464-464 0-11.176-7.714-20.873-18.603-23.385z">
+					</path>
+				</svg><!-- <i class="fas fa-phone"></i> -->
+			</a>
+		</div>
+		<div id="floating-whatsapp" style="display: none;">
+			<a href="https://wa.me/+919597414194">
+				<svg class="svg-inline--fa fa-whatsapp fa-w-14" aria-hidden="true" data-prefix="fab"
+					data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+					data-fa-i2svg="">
+					<path fill="currentColor"
+						d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+					</path>
+				</svg><!-- <i class="fab fa-whatsapp"></i> -->
+			</a>
+		</div>
+		<!-- <div id="floating-emergencia" data-toggle="modal" data-target="#modalUrgencia" style="display: none;">
+    <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path></svg><!-- <i class="fas fa-plus"></i> -->
+		<!-- </div> -->
+
+		<div class="modal fade col-lg-12" id="modalUrgencia" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="fechaModal" data-dismiss="modal">×</button>
+					<div class="modal-body">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<footer class="ftco-footer ftco-bg-dark ftco-section bg-dark foot">
+			<div class="container mt-5">
+				<div class="row mb-0">
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">SAKTHI DigiTech Solutions</h2>
+							<p>YOU DREAM IT WE BUILT IT...</p>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-0 ">
+							<h2 class="ftco-heading-2">Quick Links</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="py-2 d-block">Home</a></li>
+								<li><a href="#" class="py-2 d-block">Services</a></li>
+								<li><a href="#" class="py-2 d-block">About</a></li>
+								<li><a href="#" class="py-2 d-block">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-0">
+							<h2 class="ftco-heading-2">Contact Information</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="py-2 d-block">
+										A1, Mani Apartment, Vivekananda Nagar,
+										Kumbakonam – 612 001
+
+									</a></li>
+								<li><a href="#" class="py-2 d-block">9597414194, 0435-4069708, 8489795012,
+										9043372407</a></li>
+								<li><a href="#" class="py-2 d-block">sakthidigitech@gmail.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-0">
+							<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+								<li class="ftco-animate"><a
+										href="https://www.google.com/maps/place/Sakthi+DigiTech+Solutions/@10.9556232,79.3926341,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5533f027dd5819:0xac8420f00bdd3633!8m2!3d10.9556232!4d79.3948228"><span
+											class="icon-map"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.facebook.com/SakthiDigiTechs/"><span
+											class="icon-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.instagram.com/sakthidigitechs/"><span
+											class="icon-instagram"></span></a></li>
+							</ul>
+							<!-- <div class="row"> -->
+							<!-- <div class="col-md-12 text-center"> -->
+
+							<!-- <div class="row"> -->
+							<!-- <div class="col-md-12 text-center"> -->
+
+						</div>
+					</div>
+
+
+				</div>
+
+				<p style="text-align: center;">
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is
+					made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://www.vebbox.com/"
+						target="_blank">VEBBOX SOFTWARE SOLUTIONS</a>.
+				</p>
+			</div>
+
+		</footer>
+
+		<!-- loader -->
+		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+				<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+				<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+					stroke="#F96D00" />
+			</svg></div>
+	</section>
+	</div>
+	</div>
+	</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/particles.min.js"></script>
+	<script src="js/particle.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		/* 
+	Adiciona/Remove a classe 'floating-aberto', 
+	executando o efeito no menu flutuante
+	*/
+		$('#floating-icon').click(function () {
+			$('#floating-ligar').toggle();
+			$('#floating-whatsapp').toggle();
+			$('#floating-emergencia').toggle();
+		});
+	</script>
+</body>
+
+</html>

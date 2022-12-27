@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>DIGITAL MARKETING</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+
+   <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+
+   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+   <link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="./btn.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <link rel="stylesheet" href="css/aos.css">
+
+   <link rel="stylesheet" href="css/ionicons.min.css">
+
+   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+   <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/flaticon.css">
+   <link rel="stylesheet" href="css/icomoon.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <!-- new -->
+   <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+   <link rel="stylesheet" type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- new -->
+   <style>
+      * {
+         font-family: 'Montserrat';
+      }
+   </style>
+
+
+
+   <style>
+      * {
+         font-family: 'montserrat';
+      }
+
+      body {
+         background-image: url(./images/giphy.gif);
+         /* background-repeat: no-repeat; */
+         background-size: cover;
+
+         background-repeat: no-repeat;
+      }
+
+      h3 {
+         color: white;
+      }
+
+      p {
+         color: aliceblue;
+      }
+
+
+
+      p {
+         background-color: rgba(230, 127, 8, 0.363);
+         color: rgb(240, 231, 231);
+         border-color: rgb(182, 31, 31);
+         border: 30px;
+         /* margin-top: 12rem; */
+         text-align: justify;
+         border-radius: 20px;
+
+         /* justify-self: center; */
+      }
+
+      h1 {
+         text-align: justify;
+         /* margin-top: 5rem; */
+         width: 100%;
+         font-size: 35px;
+         letter-spacing: .05rem;
+         line-height: 1.3;
+         color: #fff;
+         font-family: "montserrat";
+         text-transform: uppercase;
+         text-align: center;
+         background: rgba(152, 7, 214, 0.774);
+         /* padding-left: 1cm; */
+      }
+   </style>
+   <style>
+      body {
+         padding: 0;
+         margin: 0;
+         /* background: #036ced; */
+         color: #EEEEEE;
+         text-align: center;
+         font-family: "Lato", sans-serif;
+      }
+
+      #video-background {
+         /*  making the video fullscreen  */
+         position: fixed;
+         right: 0;
+         bottom: 0;
+         min-width: 100%;
+         min-height: 100%;
+         width: 100%;
+         height: auto;
+         z-index: -100;
+         object-fit: cover;
+      }
+
+    
+
+      a {
+         color: inherit;
+      }
+
+      .menu-item,
+      .menu-open-button {
+         background: #EEEEEE;
+         border-radius: 100%;
+         width: 80px;
+         height: 80px;
+         margin-left: -40px;
+
+         position: absolute;
+         color: #FFFFFF;
+         text-align: center;
+         line-height: 80px;
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0);
+         -webkit-transition: -webkit-transform ease-out 200ms;
+         transition: -webkit-transform ease-out 200ms;
+         transition: transform ease-out 200ms;
+         transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+      }
+
+      .menu-open {
+         display: none;
+      }
+
+      .lines {
+         width: 25px;
+         height: 3px;
+         background: #596778;
+         display: block;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-left: -12.5px;
+         margin-top: -1.5px;
+         -webkit-transition: -webkit-transform 200ms;
+         transition: -webkit-transform 200ms;
+         transition: transform 200ms;
+         transition: transform 200ms, -webkit-transform 200ms;
+      }
+
+      .line-1 {
+         -webkit-transform: translate3d(0, -8px, 0);
+         transform: translate3d(0, -8px, 0);
+      }
+
+      .line-2 {
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0);
+      }
+
+      .line-3 {
+         -webkit-transform: translate3d(0, 8px, 0);
+         transform: translate3d(0, 8px, 0);
+      }
+
+      .menu-open:checked+.menu-open-button .line-1 {
+         -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+         transform: translate3d(0, 0, 0) rotate(45deg);
+      }
+
+      .menu-open:checked+.menu-open-button .line-2 {
+         -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+         transform: translate3d(0, 0, 0) scale(0.1, 1);
+      }
+
+      .menu-open:checked+.menu-open-button .line-3 {
+         -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+         transform: translate3d(0, 0, 0) rotate(-45deg);
+      }
+
+      .menu {
+         margin: auto;
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         width: 80px;
+         height: 80px;
+         text-align: center;
+         box-sizing: border-box;
+         font-size: 26px;
+      }
+
+
+      /* .menu-item {
+    transition: all 0.1s ease 0s;
+   } */
+
+      .menu-item:hover {
+         background: #EEEEEE;
+         color: #3290B1;
+      }
+
+      .menu-item:nth-child(3) {
+         -webkit-transition-duration: 180ms;
+         transition-duration: 180ms;
+      }
+
+      .menu-item:nth-child(4) {
+         -webkit-transition-duration: 180ms;
+         transition-duration: 180ms;
+      }
+
+      .menu-item:nth-child(5) {
+         -webkit-transition-duration: 180ms;
+         transition-duration: 180ms;
+      }
+
+      .menu-item:nth-child(6) {
+         -webkit-transition-duration: 180ms;
+         transition-duration: 180ms;
+      }
+
+      .menu-item:nth-child(7) {
+         -webkit-transition-duration: 180ms;
+         transition-duration: 180ms;
+      }
+
+      .menu-item:nth-child(8) {
+         -webkit-transition-duration: 180ms;
+         transition-duration: 180ms;
+      }
+
+      .menu-item:nth-child(9) {
+         -webkit-transition-duration: 180ms;
+         transition-duration: 180ms;
+      }
+
+      .menu-open-button {
+         z-index: 2;
+         -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+         transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+         -webkit-transition-duration: 400ms;
+         transition-duration: 400ms;
+         -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+         transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+         cursor: pointer;
+         box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+      }
+
+      .menu-open-button:hover {
+         -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+         transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+      }
+
+      .menu-open:checked+.menu-open-button {
+         -webkit-transition-timing-function: linear;
+         transition-timing-function: linear;
+         -webkit-transition-duration: 200ms;
+         transition-duration: 200ms;
+         -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+         transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+      }
+
+      .menu-open:checked~.menu-item {
+         -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+         transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+      }
+
+      .menu-open:checked~.menu-item:nth-child(3) {
+         transition-duration: 180ms;
+         -webkit-transition-duration: 180ms;
+         -webkit-transform: translate3d(0.08361px, -104.99997px, 0);
+         transform: translate3d(0.08361px, -104.99997px, 0);
+      }
+
+      .menu-open:checked~.menu-item:nth-child(4) {
+         transition-duration: 280ms;
+         -webkit-transition-duration: 280ms;
+         -webkit-transform: translate3d(90.9466px, -52.47586px, 0);
+         transform: translate3d(90.9466px, -52.47586px, 0);
+      }
+
+      .menu-open:checked~.menu-item:nth-child(5) {
+         transition-duration: 380ms;
+         -webkit-transition-duration: 380ms;
+         -webkit-transform: translate3d(90.9466px, 52.47586px, 0);
+         transform: translate3d(90.9466px, 52.47586px, 0);
+      }
+
+      .menu-open:checked~.menu-item:nth-child(6) {
+         transition-duration: 480ms;
+         -webkit-transition-duration: 480ms;
+         -webkit-transform: translate3d(0.08361px, 104.99997px, 0);
+         transform: translate3d(0.08361px, 104.99997px, 0);
+      }
+
+      .menu-open:checked~.menu-item:nth-child(7) {
+         transition-duration: 580ms;
+         -webkit-transition-duration: 580ms;
+         -webkit-transform: translate3d(-90.86291px, 52.62064px, 0);
+         transform: translate3d(-90.86291px, 52.62064px, 0);
+      }
+
+      .menu-open:checked~.menu-item:nth-child(8) {
+         transition-duration: 680ms;
+         -webkit-transition-duration: 680ms;
+         -webkit-transform: translate3d(-91.03006px, -52.33095px, 0);
+         transform: translate3d(-91.03006px, -52.33095px, 0);
+      }
+
+      .menu-open:checked~.menu-item:nth-child(9) {
+         transition-duration: 780ms;
+         -webkit-transition-duration: 780ms;
+         -webkit-transform: translate3d(-0.25084px, -104.9997px, 0);
+         transform: translate3d(-0.25084px, -104.9997px, 0);
+      }
+
+      .blue {
+         background-color: #669AE1;
+         box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .blue:hover {
+         color: #669AE1;
+         text-shadow: none;
+      }
+
+      .green {
+         background-color: #70CC72;
+         box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .green:hover {
+         color: #70CC72;
+         text-shadow: none;
+      }
+
+      .red {
+         background-color: #FE4365;
+         box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .red:hover {
+         color: #FE4365;
+         text-shadow: none;
+      }
+
+      .purple {
+         background-color: #C49CDE;
+         box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .purple:hover {
+         color: #C49CDE;
+         text-shadow: none;
+      }
+
+      .orange {
+         background-color: #f15222;
+         box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .orange:hover {
+         color: #10120f;
+         text-shadow: none;
+      }
+
+      .lightblue {
+         background-color: #62C2E4;
+         box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .lightblue:hover {
+         color: #62C2E4;
+         text-shadow: none;
+      }
+
+      .credit {
+         margin: 24px 20px 120px 0;
+         text-align: right;
+         color: #EEEEEE;
+      }
+
+      .credit a {
+         padding: 8px 0;
+         color: #C49CDE;
+         text-decoration: none;
+         transition: all 0.3s ease 0s;
+      }
+
+      .credit a:hover {
+         text-decoration: underline;
+      }
+   </style>
+
+
+</head>
+
+<body>
+
+
+   <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+         <a class="navbar-brand subheading" href=""><img src="./images/shakthi.png" class="img-fluid" alt=""
+               width="190px" /></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            
+         </button>
+         <div class="collapse navbar-collapse " style="justify-content: end;" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="./services.html" </a> Services
+                  </a>
+
+                  <!-- role="button" data-bs-toggle="dropdown" aria-expanded="false" -->
+
+                  <!-- <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul> -->
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" href="./contact.php">Contact</a>
+               </li>
+            </ul>
+
+         </div>
+      </div>
+   </nav>
+   <video autoplay loop id="video-background" muted>
+      <source src="./videos/video (1).mp4" type="video/mp4">
+   
+   </video>
+   
+
+
+
+   <div class="container">
+      <div data-aos="fade-up">
+
+         <h1>DIGITAL MARKETING</h1>
+      </div>
+      <div class="row">
+         
+         <div class="col-lg-6 col-md-5 col-sm-6 col-xs-6 mb-5">
+
+            <div data-aos="flip-left">
+               <p style="font-size: 22px; font-weight: 900; text-align: justify; padding: 30px; ">
+                  More leads. More sales. More revenue. That’s digital marketing services from WebFX. With a custom
+                  strategy, plus data-driven insights from our revenue marketing platform, MarketingCloudFX, we’ll help
+                  your business impact the metrics that matter most, from traffic to revenue</b>
+               </p>
+            </div>
+
+
+         </div>
+
+         <div class="col-lg-6 col-md-6  col-sm-6 col-xs-6 mb-5">
+
+            <nav class="menu ">
+               <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+               <label class="menu-open-button" for="menu-open">
+                  <span class="lines line-1"></span>
+                  <span class="lines line-2"></span>
+                  <span class="lines line-3"></span>
+               </label>
+
+               <a href="DIGITAL MARKETING.html" class="menu-item blue"> <i class="fa fa-object-group"
+                     style="align-self: center; font-size: 40px;" aria-hidden="true"></i>
+                  <H1></H1>
+               </a>
+               <a href="CAREER DEVELOPMENT .html" class="menu-item green"> <i class="fa fa-child" al
+                     style="color:#483d43; align-self: center; font-size: 40px;" aria-hidden="true"></i> </a>
+               <a href="WEB DEVELOPMENT.html" class="menu-item red"> <i class="fa fa-code"
+                     style="color:#3a362e; align-self: center; font-size: 40px;" aria-hidden="true"></i> </a>
+               <a href="COLLEGE PROJECTS.html" class="menu-item purple"> <i class="fa fa-graduation-cap"
+                     style="color:#19252b; align-self: center; font-size: 40px;" aria-hidden="true"></i> </a>
+               <a href="GRAPHIC DESIGN.html" class="menu-item orange"> <i class="fa-duotone fa-laptop"
+                     style="color:rgb(1, 11, 1); align-self: center; font-size: 40px;" aria-hidden="true"></i> </a>
+               <a href="STUDY ABROAD.html" class="menu-item lightblue"> <i class="fa fa-fighter-jet"
+                     style="color:black; align-self: center; font-size: 40px;" aria-hidden="true"></i> </a>
+
+            </nav>
+         </div>
+      </div>
+
+   </div>
+
+
+
+
+
+
+
+   <!-- END nav -->
+
+   <!-- <div class="js-fullheight"> -->
+   <!-- <div class="hero-wrap js-fullheight">
+    <div class="overlay"></div>
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+          <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Welcome to <strong>SAKTHI </strong> DigiTech Solutions</h1>
+          <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="contact.php" class="btn btn-primary btn-outline-white px-5 py-3">Get in touch</a></p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  
+
+  
+
+
+
+  
+
+
+  
+	<section>
+		<footer class="ftco-footer ftco-bg-dark ftco-section bg-dark foot">
+			<div class="container mt-5">
+				<div class="row mb-0">
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">SAKTHI DigiTech Solutions</h2>
+							<h6>YOU DREAM IT WE BUILT IT...</h6>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-0 ">
+							<h2 class="ftco-heading-2">Quick Links</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="py-2 d-block">Home</a></li>
+								<li><a href="#" class="py-2 d-block">Services</a></li>
+								<li><a href="#" class="py-2 d-block">About</a></li>
+								<li><a href="#" class="py-2 d-block">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-0">
+							<h2 class="ftco-heading-2">Contact Information</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="py-2 d-block">
+										A1, Mani Apartment, Vivekananda Nagar,
+										Kumbakonam – 612 001
+
+									</a></li>
+								<li><a href="#" class="py-2 d-block">9597414194, 0435-4069708, 8489795012,
+										9043372407</a></li>
+								<li><a href="#" class="py-2 d-block">sakthidigitech@gmail.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-0">
+							<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+								<li class="ftco-animate"><a
+										href="https://www.google.com/maps/place/Sakthi+DigiTech+Solutions/@10.9556232,79.3926341,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5533f027dd5819:0xac8420f00bdd3633!8m2!3d10.9556232!4d79.3948228"><span
+											class="icon-map"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.facebook.com/SakthiDigiTechs/"><span
+											class="icon-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.instagram.com/sakthidigitechs/"><span
+											class="icon-instagram"></span></a></li>
+							</ul>
+							<!-- <div class="row"> -->
+							<!-- <div class="col-md-12 text-center"> -->
+
+							<!-- <div class="row"> -->
+							<!-- <div class="col-md-12 text-center"> -->
+
+						</div>
+					</div>
+
+
+				</div>
+
+				<h6 style="text-align: center;">
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is
+					made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://www.vebbox.com/"
+						target="_blank">VEBBOX SOFTWARE SOLUTIONS</a>.
+            </h6>
+			</div>
+
+		</footer>
+
+		<!-- loader -->
+		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+				<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+				<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+					stroke="#F96D00" />
+			</svg></div>
+	</section>
+
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/jquery-migrate-3.0.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.easing.1.3.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.stellar.min.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <script src="js/aos.js"></script>
+   <script src="js/jquery.animateNumber.min.js"></script>
+   <script src="js/bootstrap-datepicker.js"></script>
+   <script src="js/jquery.timepicker.min.js"></script>
+   <script src="js/particles.min.js"></script>
+   <script src="js/particle.js"></script>
+   <script src="js/scrollax.min.js"></script>
+   <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+   <script src="js/google-map.js"></script>
+   <script src="js/main.js"></script>
+   <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+   <script>
+      /* 
+Adiciona/Remove a classe 'floating-aberto', 
+executando o efeito no menu flutuante
+*/
+      $('#floating-icon').click(function () {
+         $('#floating-ligar').toggle();
+         $('#floating-whatsapp').toggle();
+         $('#floating-emergencia').toggle();
+      });
+
+      function inVisible(element) {
+         //Checking if the element is
+         //visible in the viewport
+         var WindowTop = $(window).scrollTop();
+         var WindowBottom = WindowTop + $(window).height();
+         var ElementTop = element.offset().top;
+         var ElementBottom = ElementTop + element.height();
+         //animating the element if it is
+         //visible in the viewport
+         if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+            animate(element);
+      }
+
+      function animate(element) {
+         //Animating the element if not animated before
+         if (!element.hasClass('ms-animated')) {
+            var maxval = element.data('max');
+            var html = element.html();
+            element.addClass("ms-animated");
+            $({
+               countNum: element.html()
+            }).animate({
+               countNum: maxval
+            }, {
+               //duration 5 seconds
+               duration: 5000,
+               easing: 'linear',
+               step: function () {
+                  element.html(Math.floor(this.countNum) + html);
+               },
+               complete: function () {
+                  element.html(this.countNum + html);
+               }
+            });
+         }
+
+      }
+
+      //When the document is ready
+      $(function () {
+         //This is triggered when the
+         //user scrolls the page
+         $(window).scroll(function () {
+            //Checking if each items to animate are 
+            //visible in the viewport
+            $("h2[data-max]").each(function () {
+               inVisible($(this));
+            });
+         })
+      });
+
+   </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
+
+</body>
+
+</html>

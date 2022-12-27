@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sakthi digitech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <style>
+     
+      * {
+      font-family: 'montserrat';
+    }
+    </style>
+     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container-fluid">
+      <a class="navbar-brand subheading" href="index.html"><img src="./images/shakthi.png" class="img-fluid" alt=""
+          width="260px" /></a>        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+  
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link A">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link A">About</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link A">Services</a></li>
+           <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+            <!-- <li class="nav-item cta"><a href="contact.php" class="nav-link"><span>Get in touch</span></a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+    
+    <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Contact</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="ftco-section contact-section ftco-degree-bg">
+      <div class="container bg-light">
+        <div class="row d-flex mb-5 contact-info">
+          <div class="col-md-12 mb-4">
+            <h2 class="h4">Contact Information</h2>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-md-4">
+            <p><span>Address:</span> A1, Mani Apartment, Vivekananda Nagar,
+              Kumbakonam – 612 001
+              </p>
+          </div>
+          <div class="col-md-4">
+            <p><span>Phone:</span> <a href="tel://1234567920">9597414194,<br> 0435-4069708, 8489795012, 9043372407</a></p>
+          </div>
+          <div class="col-md-4">
+            <p><span>Email:</span> <a href="mailto:info@yoursite.com">sakthidigitech@gmail.com</a></p>
+          </div>
+          <!-- <div class="col-md-3">
+            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+          </div> -->
+        </div>
+        <div class="row block-9">
+          <div class="col-md-6 pr-md-5">
+            <form action="" method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" name="name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email" name="email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject" name="sub">
+              </div>
+              <div class="form-group">
+                <textarea id="" cols="30" rows="7" class="form-control" placeholder="Message" name="msg" ></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" name="btn1" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          
+          </div>
+
+          <?php
+
+        if(isset($_POST['btn1']))
+        {
+            $name=$_POST['name'];
+            $email=$_POST['email'];
+            $sub=$_POST['sub'];
+            $msg=$_POST['msg'];
+            $content="Sender details:\nName: $name\nEmail from: $email\nSubject: $sub\nMessage: $msg";
+            if(mail("sakthidigitech@gmail.com","Mail from our visitor","$content"))
+            {
+              echo "<script>alert('Successfully Sended');</script>";
+            }
+        }
+          ?>
+          <div class="col-md-6" id="map"></div>
+        </div>
+      </div>
+    </section>
+    <div id="floating-menu">
+      <div id="floating-icon" style="padding: 10px;">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="floating-ligar" style="display: block;">
+        <a href="tel: +919597414197">
+          <svg class="svg-inline--fa fa-phone fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M493.397 24.615l-104-23.997c-11.314-2.611-22.879 3.252-27.456 13.931l-48 111.997a24 24 0 0 0 6.862 28.029l60.617 49.596c-35.973 76.675-98.938 140.508-177.249 177.248l-49.596-60.616a24 24 0 0 0-28.029-6.862l-111.997 48C3.873 366.516-1.994 378.08.618 389.397l23.997 104C27.109 504.204 36.748 512 48 512c256.087 0 464-207.532 464-464 0-11.176-7.714-20.873-18.603-23.385z"></path></svg><!-- <i class="fas fa-phone"></i> -->	
+        </a>
+      </div>
+      <div id="floating-whatsapp" style="display: block;">
+        <a href="https://wa.me/+919597414194">
+          <svg class="svg-inline--fa fa-whatsapp fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg><!-- <i class="fab fa-whatsapp"></i> -->
+        </a>
+      </div>
+      <!-- <div id="floating-emergencia" data-toggle="modal" data-target="#modalUrgencia" style="display: block;">
+        <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path></svg><!-- <i class="fas fa-plus"></i> -->
+      </div> 
+    </div>
+    
+    <div id="floating-ligar" style="display: none;">
+      <a href="tel: +919597414197">
+        <svg class="svg-inline--fa fa-phone fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M493.397 24.615l-104-23.997c-11.314-2.611-22.879 3.252-27.456 13.931l-48 111.997a24 24 0 0 0 6.862 28.029l60.617 49.596c-35.973 76.675-98.938 140.508-177.249 177.248l-49.596-60.616a24 24 0 0 0-28.029-6.862l-111.997 48C3.873 366.516-1.994 378.08.618 389.397l23.997 104C27.109 504.204 36.748 512 48 512c256.087 0 464-207.532 464-464 0-11.176-7.714-20.873-18.603-23.385z"></path></svg><!-- <i class="fas fa-phone"></i> -->	
+      </a>
+    </div>
+    <div id="floating-whatsapp" style="display: none;">
+      <a href="https://wa.me/+919597414194">
+        <svg class="svg-inline--fa fa-whatsapp fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg><!-- <i class="fab fa-whatsapp"></i> -->
+      </a>
+    </div>
+    <!-- <div id="floating-emergencia" data-toggle="modal" data-target="#modalUrgencia" style="display: none;">
+      <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path></svg><!-- <i class="fas fa-plus"></i> -->
+    </div>
+    
+    <div class="modal fade col-lg-12" id="modalUrgencia" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="fechaModal" data-dismiss="modal">×</button>
+          <div class="modal-body">
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      /* 
+Adiciona/Remove a classe 'floating-aberto', 
+executando o efeito no menu flutuante
+*/ 
+$('#floating-icon').click(function(){
+$('#floating-ligar').toggle();
+$('#floating-whatsapp').toggle();
+$('#floating-emergencia').toggle();
+});
+    </script>
+
+    
+  <footer class="ftco-footer ftco-bg-dark ftco-section bg-dark foot">
+    <div class="container mt-5">
+      <div class="row mb-0">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">SAKTHI DigiTech Solutions</h2>
+            <p>YOU DREAM IT WE BUILT IT...</p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-0 ">
+            <h2 class="ftco-heading-2">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">Home</a></li>
+              <li><a href="#" class="py-2 d-block">Services</a></li>
+              <li><a href="#" class="py-2 d-block">About</a></li>
+              <li><a href="#" class="py-2 d-block">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+           <div class="ftco-footer-widget mb-0">
+            <h2 class="ftco-heading-2">Contact Information</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">
+                A1, Mani Apartment, Vivekananda Nagar,
+Kumbakonam – 612 001
+
+                </a></li>
+              <li><a href="#" class="py-2 d-block">9597414194, 0435-4069708, 8489795012, 9043372407</a></li>
+              <li><a href="#" class="py-2 d-block">sakthidigitech@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-0">
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+              <li class="ftco-animate"><a href="https://www.google.com/maps/place/Sakthi+DigiTech+Solutions/@10.9556232,79.3926341,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5533f027dd5819:0xac8420f00bdd3633!8m2!3d10.9556232!4d79.3948228"><span class="icon-map"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.facebook.com/SakthiDigiTechs/" ><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/sakthidigitechs/"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+        <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website    is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://www.vebbox.com/" target="_blank">VEBBOX SOFTWARE SOLUTIONS</a>. </p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+        
+          <!-- loader -->
+          <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+              <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+              <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+            </svg></div>
+        
+         
+
+  
+  
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particle.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
